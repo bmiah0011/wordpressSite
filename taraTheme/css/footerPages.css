@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700|Luxurious+Script|Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.top-part {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.topTitle h1 {
+    font-size: 75px; 
+    margin-top: -20px; 
+    margin-left: 310px; 
+    font-family: 'Arimo', sans-serif;
+    font-style: italic; 
+    color: whitesmoke;
+}
+
+.background-box {
+    position: absolute;
+    top: 320;
+    left: 90;
+    width: 65%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: -1; 
+    border-radius: 50px; 
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.topImage img {
+
+    max-width: auto;
+    height: 500px; 
+    margin-top: 25px; 
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+
+}
+
+.bottom-txts {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    margin-left: 45px;
+}
+
+.bottom-txts h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.bottom-txts p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5; 
+    color: #666;
+}
+
+

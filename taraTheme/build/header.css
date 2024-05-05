@@ -1,0 +1,165 @@
+.nav {
+    position: relative; 
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    height: 100px;
+
+    margin-bottom: 19px;
+
+}
+  
+.mn_submenu,
+.wmn_submenu {
+    display: none;
+    position: absolute; 
+    top: 50%; 
+    background-color: darkgray;
+    width: 100%;
+    padding-top: 15px;
+    height: 50px;
+
+}
+
+.mn_submenu li,
+.wmn_submenu li {
+    display: inline-block; 
+    text-align: center; 
+    width: 150px; 
+
+}
+
+.mn_submenu li a,
+.wmn_submenu li a {
+  display: block; 
+  transform: translateY(-30%); 
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: bolder;
+  color: white;
+  height: 100%; 
+  padding-top: 15px;
+
+  transition: color 0.2s ease;
+
+}
+
+.mn_submenu li a::before,
+.wmn_submenu li a::before {
+    content: '';
+    position: absolute;
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px;
+    background-color: darkgray;
+    z-index: -1; 
+    transform: skewX(8deg); 
+    transition: background-color 0.3s ease;
+
+}
+
+.mn_submenu li:hover a,
+.wmn_submenu li:hover a {
+    color: black; 
+}
+
+.mn_submenu li:hover a::before,
+.wmn_submenu li:hover a::before {
+    background-color: white; 
+    transform: skewX(8deg);
+
+}
+
+.nav .top_menu {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 1.6em;
+
+  width: 150px; 
+  display: inline-block;
+  text-align: center;
+  line-height: 60px;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+.nav .top_menu:hover {
+  background-color: lightgrey; 
+  color: white; 
+
+}
+
+.nav .top_menu.active {
+  color: black;
+  background-color: darkgray;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.7em;
+  height: 80px;
+  
+}
+
+.logo {
+  width: 150px; 
+  height: 60px; 
+  display: inline-block; 
+  align-items: center; 
+  justify-content: center;
+  position: relative;
+  padding-bottom: 6px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 40%;
+  width: 2px; 
+  background-color: lightgrey; 
+  transform: translateY(-50%);
+  transition: height 0.4s ease;
+
+}
+
+.logo:hover::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 0%;
+  width: 2px; 
+  background-color: red; 
+
+  transform: translateY(-50%);
+
+}
+
+.logo:hover {
+    background-color: lightgrey; 
+
+}
+
+.logo img {
+  width: 20%; 
+  height: auto;
+
+  /* makes an effect when when site first laods */
+  transition: opacity 1.8s ease-in-out;
+  
+  opacity: 1;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+
+}
+
+html {
+  overflow-x: hidden; 
+}

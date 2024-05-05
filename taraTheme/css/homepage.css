@@ -1,0 +1,127 @@
+.image-banner-home .image-banner img{
+    width: auto; 
+    height: 80px; 
+    box-sizing: border-box; 
+    text-align: center; 
+
+}
+
+.image-banner-home {
+    width: 100%;
+    text-align: center; 
+    background-color: #F2FAFB; 
+    padding: 0; 
+    margin: 0; 
+    margin-top: -3;
+
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.image-banner {
+    animation: slideAnimation 4s ease infinite; 
+}
+.home-video video {
+    width: 100%;
+}
+
+.home-video {
+    overflow: hidden; 
+    width: auto; 
+    height: 780px; 
+}
+
+.home-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    font-style: italic; 
+
+    position: absolute;
+    top: 550px;
+    left: 120px;
+    z-index: 2;
+    display: flex; 
+    align-items: center; 
+    
+}
+
+.home-title h2 {
+    position: absolute;
+    top: 350px; 
+    white-space: nowrap; 
+    color: rgba(240, 248, 255, 0.7);;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px; 
+    border-radius: 0 0 15px 15px;
+
+}
+
+.home-title h1 {
+
+    color: rgba(240, 248, 255, 0.7);;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    padding: 18px; 
+    border-radius: 20px 0 0 0;
+    
+}
+
+.home-title .greenT {
+    border-radius: 0 20px 0 0; 
+    color: green; 
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 18px;
+    padding-left: 0;
+    text-shadow: 0 0 0px black, 0 0 0px black, 0 0 2px green;
+
+}
+
+.view-all-btn {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Freeman', serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.view-all-btn a {
+    text-decoration: none; 
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: black; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    text-align: center; 
+    transition: background-color 0.2s; 
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.view-all-btn a:hover {
+    background-color: darkgrey;
+    color: black; 
+
+}
